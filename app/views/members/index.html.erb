@@ -1,0 +1,7 @@
+<h1> INDEX </h1>
+<p> we have <%= @members.count %> members </p>
+<% @members.each do |member| %>
+  <%= member.email %>
+  <br />
+  <%= member.name %>
+<% end %>

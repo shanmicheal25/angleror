@@ -40,6 +40,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'rspec-rails', '~> 3.8'
+  gem 'rails-controller-testing'
   gem 'rspec_junit_formatter', '~> 0.4.1'
   gem 'factory_bot_rails', '~> 5.0.2'
   gem 'parallel_tests', '~> 2.29.1'
