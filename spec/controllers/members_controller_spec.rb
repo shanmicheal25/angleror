@@ -5,7 +5,7 @@ RSpec.describe MembersController, type: :controller do
     describe 'GET index' do
         context 'when some members are present' do
            it 'assign @members' do
-                member = Member.create(email: 'shanmicheal25@gmail.com', name: 'shankar')
+                member = create(:member)
                 get :index
                 expect(assigns(:members)).to eq([member])
             end
